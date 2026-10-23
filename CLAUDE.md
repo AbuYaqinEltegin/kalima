@@ -7,7 +7,7 @@ React 18 + Vite 6 + Tailwind v4 + react-router 6. План этапов: PLAN.md
 - `src/lib/storage.js` — localStorage: `kalima:progress` {cardId: {ef,interval,reps,due}}, `kalima:log` {день: число повторений} — для статистики.
 - Study: очередь = повторения, затем новые; «снова» → через 4 карточки. `/deck/all` — поток из всех колод (`allDeck`), после колоды — кнопка «Дальше».
 - `src/lib/speak.js` — озвучка (Web Speech API, ar), авто при перевороте, клавиша S. `src/lib/plural.js` — склонения.
-- Деплой: `npx vercel --prod` (проект yaqin3/kalima → kalima-seven.vercel.app).
+- Деплой: `git push` (GitHub AbuYaqinEltegin/kalima связан с Vercel yaqin3/kalima → kalima-seven.vercel.app). Git: `C:\Program Files\Git\cmd`.
 - `src/lib/stats.js` — `streak`, `lastDays` (+тесты). Ответы в тесте пишут `logActivity()`, но SM-2 не трогают.
 - Маршруты: `/`, `/deck/:id`, `/deck/:id/quiz`, `/stats` (lazy, Recharts; цвета графика — `var(--gold)` и т.п.).
 
